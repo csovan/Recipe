@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E91E63</color>
+    <color name="colorPrimaryDark">#AD1457</color>
+    <color name="colorSecondary">#FF4081</color>
+
+    <color name="divider_gray">#eeeeee</color>
+    <color name="btn_text_color">#FFFFFF</color>
+</resources>

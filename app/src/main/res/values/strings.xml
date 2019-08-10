@@ -1,0 +1,34 @@
+<resources>
+    <!--AndroidManifest-->
+    <string name="app_name">Recipes</string>
+    <string name="ingredient_activity_label">Ingredient List</string>
+    <string name="step_activity_label">Step List</string>
+    <string name="step_details_activity_label">Let\'s Cook!</string>
+
+    <!--Layout-->
+    <string name="recipe_poster">Recipe Poster Description</string>
+    <string name="chevron_right_desc">Chevron Right Nav</string>
+    <string name="quantity_label">Quantity:</string>
+    <string name="ingredient_icon_desc">Ingredient Icon Desc</string>
+    <string name="label_servings">Servings:</string>
+    <string name="recipe_icon_desc">Recipe Icon Desc</string>
+    <string name="checked_icon_desc">Checked Icon Desc</string>
+    <string name="step_icon_desc">Step Icon Desc</string>
+    <string name="exoplayer_placeholder_image">ExoPlayer Placeholder Image</string>
+    <!--Buttons-->
+    <string name="next_step">Next Step</string>
+    <string name="previous_step">Previous Step</string>
+    <string name="view_steps">View Steps</string>
+
+    <!--No Internet Error Message-->
+    <string name="no_internet_connection">Uh Oh! A network error has occurred. Couldn\'t get the recipes! Please, check your WIFI!</string>
+    <string name="step_number_desc">Step Number Desc</string>
+    <string name="step_title">Step Title</string>
+    <string name="cooking_is_over">Cooking is done!</string>
+    <string name="you_better_see_next_step">You better see next step.</string>
+    <string name="widget_recipe_label_text">Recipe</string>
+    <string name="add_widget">Add widget</string>
+    <string name="ingredients_list">ingredients_list</string>
+    <string name="ingredients">Ingredients</string>
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.IngredientActivity">
+
+    <TextView
+        android:id="@+id/tv_ingredient_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:textColor="@color/colorSecondary"
+        android:textSize="@dimen/text_title"
+        app:layout_constraintEnd_toStartOf="@+id/iv_ingredient_checked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ingredient Title" />
+
+    <TextView
+        android:id="@+id/tv_quantity_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:text="@string/quantity_label"
+        android:textSize="@dimen/text_basic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ingredient_title"
+        tools:text="Quantity:" />
+
+    <TextView
+        android:id="@+id/tv_quantity_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textSize="@dimen/text_basic"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_quantity_label"
+        app:layout_constraintStart_toEndOf="@+id/tv_quantity_label"
+        app:layout_constraintTop_toTopOf="@+id/tv_quantity_label"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/tv_quantity_measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_xsmall"
+        android:textSize="@dimen/text_basic"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_quantity_number"
+        app:layout_constraintStart_toEndOf="@+id/tv_quantity_number"
+        app:layout_constraintTop_toTopOf="@+id/tv_quantity_number"
+        tools:text="Kg" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:background="@color/divider_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_quantity_number" />
+
+    <ImageView
+        android:id="@+id/iv_ingredient_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:contentDescription="@string/checked_icon_desc"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_ingredient_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_ingredient_title"
+        app:srcCompat="@drawable/ic_check_sign" />
+
+</android.support.constraint.ConstraintLayout>

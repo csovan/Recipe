@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.StepActivity">
+
+    <ImageView
+        android:id="@+id/iv_step_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:contentDescription="@string/step_icon_desc"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cooking_icon" />
+
+    <TextView
+        android:id="@+id/tv_step_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:textColor="@color/colorSecondary"
+        android:textSize="@dimen/text_title"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_step_icon"
+        app:layout_constraintEnd_toStartOf="@+id/iv_chevron_right"
+        app:layout_constraintStart_toEndOf="@+id/tv_step_number"
+        app:layout_constraintTop_toTopOf="@+id/iv_step_icon"
+        tools:text="Step Title" />
+
+    <TextView
+        android:id="@+id/tv_step_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oval_shape"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_step_icon"
+        app:layout_constraintStart_toEndOf="@+id/iv_step_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_step_icon"
+        tools:text="1" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:background="@color/divider_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_step_icon" />
+
+    <ImageView
+        android:id="@+id/iv_chevron_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:contentDescription="@string/chevron_right_desc"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_step_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_step_title"
+        app:srcCompat="@drawable/ic_chevron_right" />
+
+</android.support.constraint.ConstraintLayout>
